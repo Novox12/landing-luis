@@ -77,6 +77,8 @@ a{
     font-family: MyriadPro-regular;
     font-weight: 600;
     font-size: 0.6em;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .spacing{
