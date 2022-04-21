@@ -107,8 +107,12 @@ a{
 .contact-icons{
     text-align: center;
     float: left;
-    margin-right: 10px;
-    margin-left:10px;
+    margin-right: 20px;
+    margin-left:20px;
+}
+
+.contact-icons p {
+    color: #000000;
 }
 
 .contact-icons img {
@@ -273,15 +277,20 @@ a{
 
     .info {
         margin-top:120px;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    .info h1 {
+        font-size: 2.5em;
+    }
+    
+    .info h3 {
+        font-size: 1.6em;
     }
 
     .info p {
         font-size: 1em;
-    }
-
-    .info{
-        padding-left: 130px;
-        padding-right: 130px;
     }
 
     .contact-icons{
