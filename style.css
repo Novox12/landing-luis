@@ -1,16 +1,43 @@
+@font-face {
+    font-family: MyriadPro-light;
+    src:url('./fonts/Myriadpro-light.otf');
+}
+
+@font-face {
+    font-family: MyriadPro-regular;
+    src:url('./fonts/MyriadPro-Regular.otf');
+}
+
+
+@font-face {
+    font-family: MyriadPro-bold;
+    src:url('./fonts/MyriadPro-Bold.otf');
+}
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif
+body{
+    font-family: MyriadPro-light;
+}
+
+a{
+    text-decoration: none;
 }
 
 .header{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
 }
 
@@ -38,15 +65,18 @@ body {
 .info h1 {
     font-weight: bold;
     color: #85B815;
+    font-family: MyriadPro-bold;
 }
 
 .info h3 {
-    font-weight: lighter;
+    font-weight: 300;
+    font-family: MyriadPro-light;
 }
 
 .info p {
+    font-family: MyriadPro-regular;
     font-weight: 600;
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 
 .spacing{
@@ -63,8 +93,12 @@ body {
 
 .contact {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top:30px;
 }
 
@@ -77,11 +111,18 @@ body {
 
 .contact-icons img {
     width: 50px;
+    transition: all 300ms;
+    position: relative;
+}
+
+.contact a:hover .contact-icons img{
+    cursor: pointer;
+    transform: scale(1.15);
 }
 
 .contact-icons p {
     font-weight: lighter;
-    font-size: 0.6em;
+    font-size: 0.9em;
 }
 
 
@@ -108,14 +149,27 @@ body {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 3px;
+    transition: all 300ms;
+    position: relative;
+}
+
+.social-container a:hover img{
+    cursor: pointer;
+    transform: scale(1.15);
 }
 
 
 .web{
     background-color:#000;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding:2%;
     margin-top:30px;
 }
@@ -133,9 +187,15 @@ body {
 .countries{
     width: 100%;
     margin-top:30px;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .countries-icons {
@@ -152,9 +212,15 @@ body {
 
 .maps {
     width: 100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top:30px;
 }
 
@@ -165,9 +231,15 @@ body {
 
 .footer {
     width: 100%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top:30px;
     padding:10;
 }
@@ -181,4 +253,50 @@ body {
 
 
 
+
+
+@media (min-width: 950px){
+
+    .header-background{
+        background-image: url(./img/TARJETA-DIGITAL-LUIS-ANGEL-13.png);
+        height: 180px;
+        background-size: 100%;
+        background-position-y:15%;
+    }
+    
+    .header-foto{
+        width: 180px;
+        margin-top: 95px;
+    }
+
+    .info {
+        margin-top:120px;
+    }
+
+    .info p {
+        font-size: 1em;
+    }
+
+    .info{
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    .contact-icons{
+        margin-right: 50px;
+        margin-left:50px;
+    }
+    
+    .contact-icons img {
+        width: 60px;
+    }
+
+    .web h3{
+        font-size: 1.8em;
+    }
+    .web img{
+        width: 50px;
+        margin-right: 20px;
+    }
+}
 
